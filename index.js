@@ -26,7 +26,7 @@ app.get('/products', (req, res) => {
 });
 
 // GET product by ID
-app.get('/products/:productId', (req, res) => {
+app.get('/api/tiktok', (req, res) => {
   const productId = parseInt(req.params.productId);
   const product = products.find(product => product.id === productId);
   if (!product) {
